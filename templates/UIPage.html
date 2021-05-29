@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+    <html>  
+    <head>  
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="{% static 'js/app.js' %}"></script>  
+	<!-- First jquery , then js file,meta and css anywhere  -->
+	
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+ <!-- That meta tag basically specifies which character set a website is written with.
+ UTF-8 (U from Universal Character Set + Transformation Format—8-bit) is a character 
+ encoding capable of encoding all possible characters (called code points) in Unicode.
+ The encoding is variable-length and uses 8-bit code units. -->
+
+
+    </head>  
+    <body>  
+    <p><h2 class="headertekst">Movie Review</h2></p>  
+	 
+<div id="div1">
+
+    <p>1. Have you seen any kisses in this film ?</p>
+    <form action="">  
+    <input type="radio" name="Ques1" value="1" color="white"><span>Yes</span> 
+	<input type="radio" name="Ques1" value="0" ><span>No</span>
+	    <p>2. Have you seen any hits or voilance ?</p>
+    <form action="">  
+    <input type="radio" name="Ques2" value="1" ><span>Yes</span>
+	<input type="radio" name="Ques2" value="0" ><span>No</span>
+
+	    <p>3. Have you seen any space ships ?</p>
+    <form action="">  
+    <input type="radio" name="Ques3" value="1" ><span>Yes</span>
+	<input type="radio" name="Ques3" value="0" ><span>No</span>
+	    <p>4. Have you seen any forests ?</p>
+    <form action="">  
+    <input type="radio" name="Ques4" value="1" ><span>Yes</span>
+	<input type="radio" name="Ques4" value="0" ><span>No</span>
+	    <p>5. Have you seen any blood ?</p>
+    <form action="">  
+    <input type="radio" name="Ques5" value="1" ><span>Yes</span>
+	<input type="radio" name="Ques5" value="0" ><span>No</span>
+	    <p>6. Have you seen cartoon characters ?</p>
+    <form action="">  
+    <input type="radio" name="Ques6" value="1" ><span>Yes</span>
+	<input type="radio" name="Ques6" value="0" ><span>No</span>  
+	    <p>7. Have you seen any cars ?</p>
+    <form action="">  
+    <input type="radio" name="Ques7" value="1" ><span>Yes</span>
+	<input type="radio" name="Ques7" value="0" ><span>No</span>
+	    <p>8. Have you seen any wars ?</p>
+    <form action="">  
+    <input type="radio" name="Ques8" value="1" ><span>Yes</span>
+	<input type="radio" name="Ques8" value="0" ><span>No</span>
+    </form>  
+	<textarea rows="4" cols="50" placeholder="Enter movie review comments here..." id="Comment"></textarea>
+	
+	<button type="button" id="id_submit">Submit</button>
+	</div>
+<div id="review">
+
+</div>
+
+    </body>  
+    </html>  

@@ -1,0 +1,30 @@
+body {
+    background-image: url(/static/images/bg.jpg);
+	   height: 100%; 
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+h2.headertekst {
+  text-align: center;
+  color: white;
+}
+
+
+p{
+	color : white;
+}
+
+span{
+	color : white;
+}
+
+
+#div1 span
+{
+   color: white;
+}
