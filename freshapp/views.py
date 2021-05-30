@@ -25,14 +25,8 @@ def input_data(request):
         LOGGER.info('Movie Prediction Method - Starts')
 
         quetion_list=[]
-        quetion_list.append(request.POST.get('ques1'))
-        quetion_list.append(request.POST.get('ques2'))
-        quetion_list.append(request.POST.get('ques3'))
-        quetion_list.append(request.POST.get('ques4'))
-        quetion_list.append(request.POST.get('ques5'))
-        quetion_list.append(request.POST.get('ques6'))
-        quetion_list.append(request.POST.get('ques7'))
-        quetion_list.append(request.POST.get('ques8'))
+        for i in range(1,9):
+           quetion_list.append(request.POST.get('ques' + str(i)))
         
         # Finding the movie genre using Cosine Similarity
         movie={}
